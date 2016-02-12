@@ -1,39 +1,24 @@
 $(document).ready(function() {
     console.log('hello');
-    fizzbuzz();
     
-    /*
-    for (var i = 1; i <= 100; i++) {
-        if ((i % 3 == 0) && (i % 5 == 0)) {
-            console.log('fizzbuzz');
-        }
-        else if (i % 3 == 0) {
-            console.log('fizz');
-        }
-        else if (i % 5 == 0) {
-            console.log('buzz');
-        }
-        else {
-            console.log(i);
-        }
-    }
-    */
+    $('button').on('click', fizzbuzz);
+    
 });
 
 
 function fizzbuzz() {
     for (var i = 1; i <= 100; i++) {
         if ((i % 3 == 0) && (i % 5 == 0)) {
-            $('body').append('fizzbuzz \n \r');
+            $('body').append('fizzbuzz' + '\r');
         }
         else if (i % 3 == 0) {
-            $('body').append('fizz \n \r');
+            $('body').append('fizz' + '\r');
         }
         else if (i % 5 == 0) {
-            $('body').append('buzz \n \r');
+            $('body').append('buzz' + '\r');
         }
         else {
-            $('body').append(i + '\n \r');
+            $('body').append(i + '\r');
         }
     }
 }
