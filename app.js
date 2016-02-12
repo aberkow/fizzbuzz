@@ -6,16 +6,16 @@ $(document).ready(function() {
 function fizzbuzz() {
     for (var i = 1; i <= 100; i++) {
         if ((i % 3 == 0) && (i % 5 == 0)) {
-            $('.fizzbuzz').append('fizzbuzz ' + '\r');
+            $('.fizzbuzz').append('<div>"fizzbuzz"</div>');
         }
         else if (i % 3 == 0) {
-            $('.fizzbuzz').append('fizz ' + '\r');
+            $('.fizzbuzz').append('<div>"fizz"</div>');
         }
         else if (i % 5 == 0) {
-            $('.fizzbuzz').append('buzz ' + '\r');
+            $('.fizzbuzz').append('<div>"buzz"</div>');
         }
         else {
-            $('.fizzbuzz').append(i + ' \r');
+            $('.fizzbuzz').append('<div>' + i + '</div>');
         }
     }
 }
